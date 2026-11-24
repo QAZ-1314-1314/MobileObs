@@ -17,7 +17,7 @@ jobs:
   with:
     cmdline-tools-version: 12266719
       - uses: gradle/actions/setup-gradle@v4
-        with:
+        with:packages: platform-tools
           gradle-version: "8.7"
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
